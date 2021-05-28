@@ -1,11 +1,17 @@
-runtime: python27
+runtime: php55
 api_version: 1
-threadsafe: true
+
 
 handlers:
 - url: /
-  static_files: website/index.html
-  upload: website/index.html
+  script: index.php
 
-- url: /
-  static_dir: website
+- url: /index\.html
+  script: index.php
+
+- url: /stylesheets
+  static_dir: stylesheets
+
+- url: /admin/.*
+  script: admin.php
+  login: admin
