@@ -6,12 +6,8 @@ handlers:
 - url: /
   script: index.php
 
-- url: /index\.html
-  script: index.php
 
-- url: /stylesheets
-  static_dir: stylesheets
 
-- url: /admin/.*
-  script: admin.php
-  login: admin
+
+
+
